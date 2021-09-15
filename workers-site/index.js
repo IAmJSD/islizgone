@@ -5,11 +5,11 @@ addEventListener("fetch", event => {
 });
 
 async function resignedAtApi() {
-  const res = await fetch("https://www.gov.uk/api/content/government/people/gavin-williamson");
-  if (!res.ok) throw new Error(`Result from gov.uk was ${res.status}`);
-  const json = await res.json();
-  const ended = json.links.role_appointments[2].details.ended_on;
-  return new Response(JSON.stringify(ended), {
+  //const res = await fetch("https://www.gov.uk/api/content/government/people/gavin-williamson");
+  //if (!res.ok) throw new Error(`Result from gov.uk was ${res.status}`);
+  //const json = await res.json();
+  //const ended = json.links.role_appointments[2].details.ended_on;
+  return new Response(JSON.stringify("2020-09-15T12:42:00.000+00:00"), {
     headers: {
       "Content-Type": "application/json",
     },
