@@ -1,6 +1,6 @@
 account_id = "ac2dd89af834dd17d7f5cf5df3789f08"
 name = "islizgone"
-route = "*islizgone.com/*"
+route = { pattern = "*islizgone.com/*", zone_id = "07c139886c55370fc4e36f8da5530aa1" }
 workers_dev = false
 compatibility_date = "2022-10-19"
 main = "workers-site/index.js"
