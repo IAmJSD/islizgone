@@ -1,2 +1,2 @@
-# isgavgone.com
-A satirical and educational website dedicated to checking for when Gavin Williamson resigns.
+# islizgone.com
+A website for predicting and checking if Liz Truss (the current prime minister) is gone. 

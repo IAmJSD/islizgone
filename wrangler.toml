@@ -1,7 +1,7 @@
 account_id = "ac2dd89af834dd17d7f5cf5df3789f08"
-name = "isgavgone"
+name = "islizgone"
 type = "webpack"
-route = "*isgavgone.com/*"
+route = "*islizgone.com/*"
 workers_dev = false
 zone_id = "bd606e8487c052cb57160353fabf3bef"
 

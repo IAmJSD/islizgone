@@ -4,7 +4,7 @@ class ElapsedSinceDoom extends React.Component {
   constructor() {
     super();
     const f = this.setDate.bind(this);
-    this.gavFuckyWucky = (new Date("08/13/2020 08:00")).getTime();
+    this.lizFuckyWucky = (new Date("09/08/2022 16:00")).getTime();
     this.state = {now: Date.now(), tickerId: setInterval(f, 1000)};
   }
 
@@ -17,8 +17,8 @@ class ElapsedSinceDoom extends React.Component {
   }
 
   render() {
-    // Sub the results day date from the current date.
-    const diff = this.state.now - this.gavFuckyWucky;
+    // Sub the PM date from the current date.
+    const diff = this.state.now - this.lizFuckyWucky;
 
     // Get the parts to render.
     const parts = [];
@@ -52,14 +52,8 @@ class ElapsedSinceDoom extends React.Component {
 
 function InformationPanel() {
   return <aside>
-    <h3>Why should he resign?</h3>
-    <p>Gavin Williamson's policies will have destroyed the lives of many young people. Whilst he did apologise for this, his fixes were too late and were after many people lost their university places.</p>
-
-    <h3>Isn't this website a bit harsh?</h3>
-    <p>He had every opportunity to change his course of actions to not destroy thousands of lives. With that said, all I personally want is for him to resign from his position since I believe his actions were too damaging for him to stay on.</p>
-
-    <h3>Should I go and [do social media action to] him?</h3>
-    <p><b>No.</b> This website is for informational and satirical purposes only. I do not condone any personal attacks. He only deserves to lose his position as anyone who failed at a job as badly as he did would have to in normal circumstances.</p>
+    <h3>Why should she resign?</h3>
+    <p>Hello world</p>
   </aside>;
 }
 
@@ -70,7 +64,7 @@ export default class App extends React.Component {
     super();
 
     // There are 4 resignation dates.
-    // undefined = not loaded, null = not happened yet, 0 = server error, Date = he's gone
+    // undefined = not loaded, null = not happened yet, 0 = server error, Date = she's gone
     this.state = {resignationDate: undefined};
 
     // Get the information every second.
@@ -104,15 +98,15 @@ export default class App extends React.Component {
       }
       case 0: {
         el = <main>
-          <h1>I can't figure out if he resigned.</h1>
-          <p>There's an issue either your end, my end or the government's end. This should change in a few seconds when I can update.</p>
+          <h1>I can't figure out if she resigned.</h1>
+          <p>There's an issue either your end or my end. This should change in a few seconds when I can update.</p>
         </main>;
         break;
       }
       case null: {
         el = <main>
-          <h1>Gavin has not resigned yet.</h1>
-          <p>Time elapsed since the A-Level/BTEC results day where his policies altered the lives of many students:</p>
+          <h1>Liz has not resigned yet.</h1>
+          <p>Time elapsed since Liz Truss became PM and started her destructive path:</p>
           <br />
           <ElapsedSinceDoom />
         </main>;
@@ -122,8 +116,8 @@ export default class App extends React.Component {
         const dateTimeFormat = new Intl.DateTimeFormat('en', { year: 'numeric', month: 'long', day: '2-digit' }) 
         const [{ value: month },,{ value: day },,{ value: year }] = dateTimeFormat.formatToParts(this.state.resignationDate);
         el = <main>
-          <h1>🦀 GAV IS GONE 🦀</h1>
-          <p>Gavin resigned on <b>{day} {month} {year}</b>.</p>
+          <h1>🦀 LIZ IS GONE 🦀</h1>
+          <p>Liz Truss resigned on <b>{day} {month} {year}</b>.</p>
           <br />
           <iframe src="https://www.youtube.com/embed/LDU_Txk06tM?autoplay=1&amp;t=74" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </main>;
@@ -140,7 +134,7 @@ export default class App extends React.Component {
       <hr />
       <aside style={{textAlign: 'center'}}>
         <p>
-          <a href="https://jakegealer.me">Personal Website</a> | <a href="https://github.com/JakeMakesStuff/isgavgone">GitHub Repository</a>
+          <a href="https://jakegealer.me">Personal Website</a> | <a href="https://github.com/JakeMakesStuff/islizgone">GitHub Repository</a>
         </p>
       </aside>
     </div>;
