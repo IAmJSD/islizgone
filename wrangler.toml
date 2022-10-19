@@ -1,10 +1,9 @@
 account_id = "ac2dd89af834dd17d7f5cf5df3789f08"
 name = "islizgone"
-type = "webpack"
 route = "*islizgone.com/*"
 workers_dev = false
-zone_id = "bd606e8487c052cb57160353fabf3bef"
+compatibility_date = "2022-10-19"
+main = "workers-site/index.js"
 
 [site]
 bucket = "./build"
-entry-point = "workers-site"

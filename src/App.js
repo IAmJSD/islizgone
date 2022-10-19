@@ -52,8 +52,21 @@ class ElapsedSinceDoom extends React.Component {
 
 function InformationPanel() {
   return <aside>
-    <h3>Why should she resign?</h3>
-    <p>Hello world</p>
+    <h3>Why is her premiership so bad?</h3>
+    <p>
+      Liz Truss has already made many destructive u-turns during her premiership. A recent example was needing to
+      u-turn on her decision to reduce tax for the wealthy by doing excess borrowing. This lead to the collapse of the
+      pound until the Bank of England stepped in to rescue pension funds. Another example is her recent vote on fracking,
+      with both Theresa May and Boris Johnson abstaining from the vote and many other people in the Conservative party
+      joining them. Liz Truss also has an approval rating under Prince Andrew according to some polls.
+    </p>
+
+    <h3>But there is nobody better in the party to replace her?</h3>
+    <p>
+      This is the only reason she is still in the cabinet. Until the Tories find a replacement, they are effectively using
+      the country as a hostage to keep her in the cabinet. This is a very dangerous game to play during turbulant times such
+      as right now.
+    </p>
   </aside>;
 }
 
