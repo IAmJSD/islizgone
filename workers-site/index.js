@@ -4,7 +4,7 @@ addEventListener("fetch", event => {
   event.respondWith(handleEvent(event));
 });
 
-const resignationTimestamp = null;
+const resignationTimestamp = "2022-10-20T13:35:00.000+00:00";
 
 async function resignedAtApi() {
   return new Response(JSON.stringify(resignationTimestamp), {
